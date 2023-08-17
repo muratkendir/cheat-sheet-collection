@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>YAML - cheat-sheet-collection</title>
+    <title>SDO_GEOMETRY (ORACLEDB) - cheat-sheet-collection</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "YAML";
-        var mkdocs_page_input_path = "yaml/yaml-main.md";
+        var mkdocs_page_name = "SDO_GEOMETRY (ORACLEDB)";
+        var mkdocs_page_input_path = "oracledb/sdo_geometry.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,26 +44,16 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">YAML</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#links">Links</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#characters-and-rules-table">Characters and Rules Table</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tricks">Tricks</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#html-entity-escape">HTML Entity Escape</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#unicode-escape">Unicode Escape</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../yaml/yaml-main/">YAML</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../oracledb/sdo_geometry/">SDO_GEOMETRY (ORACLEDB)</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">SDO_GEOMETRY (ORACLEDB)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#table-of-sdo_geometry-elements">Table of SDO_GEOMETRY elements</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -84,7 +74,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>YAML</li>
+      <li>SDO_GEOMETRY (ORACLEDB)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -93,105 +83,105 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="yaml-cheatsheet">YAML Cheatsheet</h1>
-<h2 id="links">Links</h2>
-<p><a href="https://onlineyamltools.com">onlineyamltools.com</a></p>
-<h2 id="characters-and-rules-table">Characters and Rules Table</h2>
+                <h1 id="sdo_geometry-cheatsheet">SDO_GEOMETRY Cheatsheet</h1>
+<p>SDO_GEOMETRY is the data type stores geometries on OracleDB Spatial package.</p>
+<p>Main structure of the SDO_GEOMETRY object is like below:</p>
+<pre><code class="language-yaml">SDO_GEOMETRY
+  - SDO_GTYPE
+  - SDO_SRID
+  - SDO_POINT
+    - SDO_POINT_TYPE
+  - SDO_ELEM_INFO_ARRAY
+    - SDO_STARTING_OFFSET
+    - SDO_ETYPE
+    - SDO_INTERPRETATION
+  - SDO_ORDINATES 
+</code></pre>
+<h2 id="table-of-sdo_geometry-elements">Table of SDO_GEOMETRY elements</h2>
 <table>
 <thead>
 <tr>
-<th>Relevant Character(s)</th>
-<th>Rule(z)</th>
-<th>Note</th>
+<th><strong>Level</strong></th>
+<th><strong>Relevant Object</strong></th>
+<th><strong>Rule(z)</strong></th>
+<th><strong>Note</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td>No more spaces!</td>
-<td></td>
-</tr>
-<tr>
-<td># (hashtag)</td>
-<td>for single line commenting</td>
+<td>0</td>
+<td>SDO_GEOMETRY</td>
+<td>includes SDO_GTYPE, SDO_SRID, SDO_POINT, SDO_ELEM_INFO_ARRAY, SDO_ORDINATES</td>
 <td></td>
 </tr>
 <tr>
-<td>true / false</td>
-<td>returns boolean</td>
-<td>yes / no , on / off</td>
+<td>1</td>
+<td>SDO_GTYPE</td>
+<td>XXXX: First digit stands for Dimension</td>
+<td>2,3,4</td>
 </tr>
 <tr>
-<td>- (hypen/dash+space)</td>
-<td>for creating sequences (list member)</td>
+<td>XXXX: Second digit stands for linear referencing (measure) system</td>
+<td>0, 3 (X,Y,M), 4 (X,Y,Z,M)</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>[1, 2, 3] (square bracket)</td>
-<td>also works for creating lists</td>
+<td>XXXX: last 2 digits stands for geometry types</td>
+<td>01: Point, 02: Line/Curve, 03: Polygon/Surface, 07:Multipolygon, 08:Solid, 09: MultiSolid</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>(pipe)</td>
-<td>used to write multiline strings and to keep as multline string</td>
+<td>1</td>
+<td>SDO_SRID</td>
+<td>SRID code of CRS</td>
 <td></td>
 </tr>
 <tr>
-<td>&gt; (greater than)</td>
-<td>used to write multiline strings and to converts it to single line string</td>
+<td>1</td>
+<td>SDO_POINT</td>
+<td>This object used if SDO_ELEM_INFO and SDO_ORDINATES is NULL</td>
+<td>In other words, if only points are stored (not with Linear Referencing and as oriented point).</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SDO_ELEM_INFO_ARRAY</td>
+<td>includes SDO_STARTING_OFFSET, SDO_ETYPE and SDO_INTERPRETATION</td>
 <td></td>
 </tr>
 <tr>
-<td>$ (dollar)</td>
-<td>forwards environment variable into strings</td>
+<td>2</td>
+<td>SDO_STARTING_OFFSET</td>
+<td>Offset in ordinates</td>
 <td></td>
 </tr>
 <tr>
-<td>{{ }} (double curly bracket)</td>
-<td>placeholder</td>
+<td>2</td>
+<td>SDO_ETYPE</td>
+<td>Codes for geometry types</td>
+<td>1003: Exterior (CCW) Simple Polygon, 2003: Interior (CW) Simple Polygon, 1005: Exterior Compound Polygon (w ring), 2005: Interior Compound Polygon (w ring), 1006: Exterior Surface (contains at least 1 polygon), 2006: Interior Surface, 1007: Solid</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SDO_INTERPRETATION</td>
+<td>If the geometry is compound than it specifies how many triplets are part of the geometry.</td>
 <td></td>
 </tr>
 <tr>
-<td>--- (three dash)</td>
-<td>used as seperator in multi documents</td>
-<td></td>
-</tr>
-<tr>
-<td>&amp; (ampersand)</td>
-<td>used to declare an object as anchor (like pointers)</td>
-<td></td>
-</tr>
-<tr>
-<td>* (asteriks)</td>
-<td>used to call the object with anchor with the same name (called as alias)</td>
-<td></td>
-</tr>
-<tr>
-<td>&lt;&lt;: (x2 less than+colon)</td>
-<td>refers to an object called with an alias, it is possible to override the predefined attribute.</td>
-<td></td>
-</tr>
-<tr>
-<td>!!str / !!int / !!bool</td>
-<td>data type casting</td>
-<td></td>
+<td>1</td>
+<td>SDO_ORDINATES</td>
+<td>lists and represents the order of the ordinates</td>
+<td>X, Y, Z, M</td>
 </tr>
 </tbody>
 </table>
-<h2 id="tricks">Tricks</h2>
-<p>How to escape special characters in a string?</p>
-<h3 id="html-entity-escape">HTML Entity Escape</h3>
-<p><img alt="Entity Escapes" src="../media/entity-escapes.svg" /></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity#reserved_characters">Reserved Characters - Mozilla Developer</a> </p>
-<h3 id="unicode-escape">Unicode Escape</h3>
-<p><img alt="Unicode Escapes" src="../media/unicode-escapes.svg" /></p>
-<p><a href="https://www.rapidtables.com/code/text/unicode-characters.html">Unicode Characters Table - Rapid Tables</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../oracledb/sdo_geometry/" class="btn btn-neutral float-right" title="SDO_GEOMETRY (ORACLEDB)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../yaml/yaml-main/" class="btn btn-neutral float-left" title="YAML"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -214,10 +204,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../yaml/yaml-main/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../oracledb/sdo_geometry/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../about/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
