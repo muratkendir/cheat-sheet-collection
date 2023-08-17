@@ -2,5 +2,6 @@ site_name: cheat-sheet-collection
 nav:
   - Home: index.md
   - YAML: yaml/yaml-main.md
+  - "SDO_GEOMETRY (ORACLEDB)": oracledb/sdo_geometry.md
   - About: about.md
 theme: readthedocs

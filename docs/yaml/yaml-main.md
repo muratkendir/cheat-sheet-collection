@@ -8,7 +8,7 @@
 
  Relevant Character(s) | Rule(z) | Note 
 ---|---|---
- No more spaces! |  |  
+ | No more spaces! |  
  # (hashtag) | for single line commenting |  
  true / false | returns boolean | yes / no , on / off 
  - (hypen/dash+space) | for creating sequences (list member) |  
