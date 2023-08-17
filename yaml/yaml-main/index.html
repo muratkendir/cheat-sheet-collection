@@ -49,6 +49,8 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#links">Links</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#characters-and-rules-table">Characters and Rules Table</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#tricks">Tricks</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#html-entity-escape">HTML Entity Escape</a>
@@ -90,6 +92,88 @@
                 <h1 id="yaml-cheatsheet">YAML Cheatsheet</h1>
 <h2 id="links">Links</h2>
 <p><a href="https://onlineyamltools.com">onlineyamltools.com</a></p>
+<h2 id="characters-and-rules-table">Characters and Rules Table</h2>
+<table>
+<thead>
+<tr>
+<th>Relevant Character(s)</th>
+<th>Rule(z)</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No more spaces!</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td># (hashtag)</td>
+<td>for single line commenting</td>
+<td></td>
+</tr>
+<tr>
+<td>true / false</td>
+<td>returns boolean</td>
+<td>yes / no , on / off</td>
+</tr>
+<tr>
+<td>- (hypen/dash+space)</td>
+<td>for creating sequences (list member)</td>
+<td></td>
+</tr>
+<tr>
+<td>[1, 2, 3] (square bracket)</td>
+<td>also works for creating lists</td>
+<td></td>
+</tr>
+<tr>
+<td>(pipe)</td>
+<td>used to write multiline strings and to keep as multline string</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt; (greater than)</td>
+<td>used to write multiline strings and to converts it to single line string</td>
+<td></td>
+</tr>
+<tr>
+<td>$ (dollar)</td>
+<td>forwards environment variable into strings</td>
+<td></td>
+</tr>
+<tr>
+<td>{{ }} (double curly bracket)</td>
+<td>placeholder</td>
+<td></td>
+</tr>
+<tr>
+<td>--- (three dash)</td>
+<td>used as seperator in multi documents</td>
+<td></td>
+</tr>
+<tr>
+<td>&amp; (ampersand)</td>
+<td>used to declare an object as anchor (like pointers)</td>
+<td></td>
+</tr>
+<tr>
+<td>* (asteriks)</td>
+<td>used to call the object with anchor with the same name (called as alias)</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;&lt;: (x2 less than+colon)</td>
+<td>refers to an object called with an alias, it is possible to override the predefined attribute.</td>
+<td></td>
+</tr>
+<tr>
+<td>!!str / !!int / !!bool</td>
+<td>data type casting</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="tricks">Tricks</h2>
 <p>How to escape special characters in a string?</p>
 <h3 id="html-entity-escape">HTML Entity Escape</h3>
