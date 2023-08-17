@@ -4,4 +4,12 @@ nav:
   - YAML: yaml/yaml-main.md
   - "SDO_GEOMETRY (ORACLEDB)": oracledb/sdo_geometry.md
   - About: about.md
-theme: readthedocs
+theme:
+    name: material
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list

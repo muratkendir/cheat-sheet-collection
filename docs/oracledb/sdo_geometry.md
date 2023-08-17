@@ -32,4 +32,81 @@ SDO_GEOMETRY
  2 | SDO_INTERPRETATION | If the geometry is compound than it specifies how many triplets are part of the geometry. |  
  1 | SDO_ORDINATES | lists and represents the order of the ordinates | X, Y, Z, M 
 
+ {{< rawhtml >}}
+ <div class="divTable">
+    <div class="row">
+        <div class="cell">Level</div>
+        <div class="cell">Relevant Object</div>
+        <div class="cell">Rule(z)</div>
+        <div class="cell">Note</div>
+    </div>
+    <div class="row">
+        <div class="cell">0</div>
+        <div class="cell">SDO_GEOMETRY</div>
+        <div class="cell">includes SDO_GTYPE, SDO_SRID, SDO_POINT, SDO_ELEM_INFO_ARRAY, SDO_ORDINATES</div>
+        <div class="cell"></div>
+    </div>
+    <div class="row">
+        <div class="cell">1</div>
+        <div class="cell">SDO_GTYPE</div>
+        <div class="cell">XXXX: First digit stands for Dimension</div>
+        <div class="cell">2,3,4</div>
+    </div>
+    <div class="row">
+        <div class="cell">XXXX: Second digit stands for linear referencing (measure) system</div>
+        <div class="cell">0, 3 (X,Y,M), 4 (X,Y,Z,M)</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <div class="row">
+        <div class="cell">XXXX: last 2 digits stands for geometry types</div>
+        <div class="cell">01: Point, 02: Line/Curve, 03: Polygon/Surface, 07:Multipolygon, 08:Solid, 09: MultiSolid</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <div class="row">
+        <div class="cell">1</div>
+        <div class="cell">SDO_SRID</div>
+        <div class="cell">SRID code of CRS</div>
+        <div class="cell"></div>
+    </div>
+    <div class="row">
+        <div class="cell">1</div>
+        <div class="cell">SDO_POINT</div>
+        <div class="cell">This object used if SDO_ELEM_INFO and SDO_ORDINATES is NULL</div>
+        <div class="cell">In other words, if only points are stored (not with Linear Referencing and as oriented point).</div>
+    </div>
+    <div class="row">
+        <div class="cell">1</div>
+        <div class="cell">SDO_ELEM_INFO_ARRAY</div>
+        <div class="cell">includes SDO_STARTING_OFFSET, SDO_ETYPE and SDO_INTERPRETATION</div>
+        <div class="cell"></div>
+    </div>
+    <div class="row">
+        <div class="cell">2</div>
+        <div class="cell">SDO_STARTING_OFFSET</div>
+        <div class="cell">Offset in ordinates</div>
+        <div class="cell"></div>
+    </div>
+    <div class="row">
+        <div class="cell">2</div>
+        <div class="cell">SDO_ETYPE</div>
+        <div class="cell">Codes for geometry types</div>
+        <div class="cell">1003: Exterior (CCW) Simple Polygon, 2003: Interior (CW) Simple Polygon, 1005: Exterior Compound Polygon (w ring), 2005: Interior Compound Polygon (w ring), 1006: Exterior Surface (contains at least 1 polygon), 2006: Interior Surface, 1007: Solid</div>
+    </div>
+    <div class="row">
+        <div class="cell">2</div>
+        <div class="cell">SDO_INTERPRETATION</div>
+        <div class="cell">If the geometry is compound than it specifies how many triplets are part of the geometry.</div>
+        <div class="cell"></div>
+    </div>
+    <div class="row">
+        <div class="cell">1</div>
+        <div class="cell">SDO_ORDINATES</div>
+        <div class="cell">lists and represents the order of the ordinates</div>
+        <div class="cell">X, Y, Z, M</div>
+    </div>
+</div>
+ {{< /rawhtml >}}
+
 
