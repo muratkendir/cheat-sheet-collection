@@ -1,0 +1,6 @@
+site_name: cheat-sheet-collection
+nav:
+  - Home: index.md
+  - YAML: yaml/yaml-main.md
+  - About: about.md
+theme: readthedocs
