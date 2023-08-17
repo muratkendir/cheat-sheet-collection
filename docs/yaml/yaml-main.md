@@ -9,12 +9,8 @@
 How to escape special characters in a string?
 
 ### HTML Entity Escape
-"& = &amp;"
-"< = &lt;"
-"> = &gt;"
-" = &nbsp; (space)"
-'" = &quot;'
-"' = &#39; "
+
+![Entity Escapes](media/entity-escapes.svg)
 [Reserved Characters](https://developer.mozilla.org/en-US/docs/Glossary/Entity#reserved_characters) 
 
 ### Unicode Escape
