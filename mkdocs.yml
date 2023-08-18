@@ -2,7 +2,9 @@ site_name: cheat-sheet-collection
 nav:
   - Home: index.md
   - YAML: yaml/yaml-main.md
-  - "SDO_GEOMETRY (ORACLEDB)": oracledb/sdo_geometry.md
+  - ORACLEDB:
+    - "SDO_GEOMETRY (ORACLEDB)": oracledb/sdo_geometry.md
+    - "OracleDB vs PostgreSQL": oracledb/oracledb-vs-postgresql-tricks.md
   - About: about.md
 theme:
     name: material
