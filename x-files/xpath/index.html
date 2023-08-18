@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../../yaml/yaml-main/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../oracledb-vs-postgresql-tricks/">
+        <link rel="next" href="../../yaml/yaml-main/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>SDO_GEOMETRY (ORACLEDB) - cheat-sheet-collection</title>
+        <title>XPath - cheat-sheet-collection</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sdo_geometry-cheatsheet" class="md-skip">
+        <a href="#xpath" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SDO_GEOMETRY (ORACLEDB)
+              XPath
             
           </span>
         </div>
@@ -201,14 +201,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -217,7 +219,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           X-Files
@@ -228,11 +230,80 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../x-files/xpath/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          XPath
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         XPath
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kind-of-nodes" class="md-nav__link">
+    Kind of Nodes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expressions-and-wildcards" class="md-nav__link">
+    Expressions and Wildcards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predicates-and-operators" class="md-nav__link">
+    Predicates and Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axes" class="md-nav__link">
+    Axes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -265,16 +336,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
@@ -283,7 +352,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           ORACLEDB
@@ -294,52 +363,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          SDO_GEOMETRY (ORACLEDB)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../oracledb/sdo_geometry/" class="md-nav__link">
         SDO_GEOMETRY (ORACLEDB)
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-sdo_geometry-elements" class="md-nav__link">
-    Table of SDO_GEOMETRY elements
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -351,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../oracledb-vs-postgresql-tricks/" class="md-nav__link">
+      <a href="../../oracledb/oracledb-vs-postgresql-tricks/" class="md-nav__link">
         OracleDB vs PostgreSQL
       </a>
     </li>
@@ -407,8 +435,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-sdo_geometry-elements" class="md-nav__link">
-    Table of SDO_GEOMETRY elements
+  <a href="#kind-of-nodes" class="md-nav__link">
+    Kind of Nodes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expressions-and-wildcards" class="md-nav__link">
+    Expressions and Wildcards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predicates-and-operators" class="md-nav__link">
+    Predicates and Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axes" class="md-nav__link">
+    Axes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
@@ -428,96 +484,336 @@
                   
 
 
-<h1 id="sdo_geometry-cheatsheet">SDO_GEOMETRY Cheatsheet</h1>
-<p>SDO_GEOMETRY is the data type stores geometries on OracleDB Spatial package.</p>
-<p>Main structure of the SDO_GEOMETRY object is like below:</p>
-<pre><code class="language-yaml">SDO_GEOMETRY
-  - SDO_GTYPE
-  - SDO_SRID
-  - SDO_POINT
-    - SDO_POINT_TYPE
-  - SDO_ELEM_INFO_ARRAY
-    - SDO_STARTING_OFFSET
-    - SDO_ETYPE
-    - SDO_INTERPRETATION
-  - SDO_ORDINATES 
-</code></pre>
-<h2 id="table-of-sdo_geometry-elements">Table of SDO_GEOMETRY elements</h2>
+<h1 id="xpath">XPath</h1>
+<h2 id="kind-of-nodes">Kind of Nodes</h2>
+<p>Element, Attribute, Text, Namespace, Processing/Instruction, Comment, Root</p>
+<h2 id="expressions-and-wildcards">Expressions and Wildcards</h2>
 <table>
 <thead>
 <tr>
-<th><strong>Level</strong></th>
-<th><strong>Relevant Object</strong></th>
-<th><strong>Rule(z)</strong></th>
-<th><strong>Note</strong></th>
+<th><strong>Expression</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Açıklama(TR)</strong></th>
+<th><strong>Examples</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0</td>
-<td>SDO_GEOMETRY</td>
-<td>includes SDO_GTYPE, SDO_SRID, SDO_POINT, SDO_ELEM_INFO_ARRAY, SDO_ORDINATES</td>
+<td>nodename</td>
+<td>Selects all nodes with the name "nodename"</td>
+<td>"nodename" ismine sahip bütün düğümler</td>
+<td>---</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Selects from the root node</td>
+<td>Kök düğüm</td>
+<td>---</td>
+</tr>
+<tr>
+<td>//</td>
+<td>Selects nodes in the document from the current node that match the selection no matter where they are</td>
+<td>Mevcut düğümden itibaren, nerede olduğuna bakmaksızın eşleşen ilk düğüm</td>
+<td>---</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Selects the cuırrent node</td>
+<td>Mevcut düğüm</td>
+<td>---</td>
+</tr>
+<tr>
+<td>..</td>
+<td>Selects the parent of the current node</td>
+<td>Baba düğüm</td>
+<td>---</td>
+</tr>
+<tr>
+<td>@</td>
+<td>Selects Attributes</td>
+<td>Öznitelik</td>
+<td>---</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Matches any element node</td>
+<td>Eşleşen herhangi bir düğüm</td>
+<td>---</td>
+</tr>
+<tr>
+<td>@*</td>
+<td>Matches any element node</td>
+<td>Eşeleşen herhangi bir öznitelik</td>
+<td>---</td>
+</tr>
+<tr>
+<td>node()</td>
+<td>Matches any node of any kind</td>
+<td>Herhangi bir türdeki herhangi bir düğüm</td>
+<td>name(), local-name(), namepsace-uri(), position()</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>SDO_GTYPE</td>
-<td>XXXX: First digit stands for Dimension</td>
-<td>2,3,4</td>
-</tr>
-<tr>
-<td></td>
-<td>XXXX: Second digit stands for linear referencing (measure) system</td>
-<td>0, 3 (X,Y,M), 4 (X,Y,Z,M)</td>
+<td><strong>Example</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Açıklama(TR)</strong></td>
 <td></td>
 </tr>
 <tr>
-<td></td>
-<td>XXXX: last 2 digits stands for geometry types</td>
-<td>01: Point, 02: Line/Curve, 03: Polygon/Surface, 07:Multipolygon, 08:Solid, 09: MultiSolid</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>SDO_SRID</td>
-<td>SRID code of CRS</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>SDO_POINT</td>
-<td>This object used if SDO_ELEM_INFO and SDO_ORDINATES is NULL</td>
-<td>In other words, if only points are stored (not with Linear Referencing and as oriented point).</td>
-</tr>
-<tr>
-<td>1</td>
-<td>SDO_ELEM_INFO_ARRAY</td>
-<td>includes SDO_STARTING_OFFSET, SDO_ETYPE and SDO_INTERPRETATION</td>
+<td>/bookstore/*</td>
+<td>---</td>
+<td>"bookstore" içindeki herhangi bir düğüm</td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>SDO_STARTING_OFFSET</td>
-<td>Offset in ordinates</td>
+<td>//*</td>
+<td>---</td>
+<td>Mevcuttan itibaren dökümandaki herhangi bir düğüm</td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>SDO_ETYPE</td>
-<td>Codes for geometry types</td>
-<td>1003: Exterior (CCW) Simple Polygon, 2003: Interior (CW) Simple Polygon, 1005: Exterior Compound Polygon (w ring), 2005: Interior Compound Polygon (w ring), 1006: Exterior Surface (contains at least 1 polygon), 2006: Interior Surface, 1007: Solid</td>
-</tr>
-<tr>
-<td>2</td>
-<td>SDO_INTERPRETATION</td>
-<td>If the geometry is compound than it specifies how many triplets are part of the geometry.</td>
+<td>//title[@*]</td>
+<td>---</td>
+<td>Özniteliği olan herhangi bir "title" türündeki düğüm</td>
 <td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>SDO_ORDINATES</td>
-<td>lists and represents the order of the ordinates</td>
-<td>X, Y, Z, M</td>
+<td><br></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="predicates-and-operators">Predicates and Operators</h2>
+<table>
+<thead>
+<tr>
+<th><strong>PREDICATE/Belirteç</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Açıklama(TR)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>book[1]</td>
+<td>Frist node in book</td>
+<td>"Book" elemanı içindeki ilk (çocuk) düğüm</td>
+</tr>
+<tr>
+<td>book[last()]</td>
+<td>Last node in book</td>
+<td>"Book" içindeki son (çocuk) düğüm</td>
+</tr>
+<tr>
+<td>[last()-1]</td>
+<td>Last but one</td>
+<td>Sondan bir önceki</td>
+</tr>
+<tr>
+<td>[position&lt;3]</td>
+<td>First two nodes</td>
+<td>İlk iki düğüm</td>
+</tr>
+<tr>
+<td>//title[@lang]</td>
+<td>Any "title" nodes with a "lang" attribute</td>
+<td>Düğüm adı "title" olup, "lang" isimli bir özniteliği olan düğümler</td>
+</tr>
+<tr>
+<td>/bookstore/book[price&gt;35.00]</td>
+<td>Alt books in bookstore which are expensive than 35 unit</td>
+<td>"Bookstore" içindeki "Book"larda fiyatı 35'den fazla olanlar</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>OPERATOR</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Açıklama(TR)</strong></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>//book/title <code>||</code> //book/price</td>
+<td>Double pipe used as AND</td>
+<td>"Book" içindeki "title"lar VE "book" içindeki "price"lar</td>
+</tr>
+<tr>
+<td>//book <code>|</code> //cd</td>
+<td>---</td>
+<td>İki düğümü bir araya getirir.</td>
+</tr>
+<tr>
+<td>(+), (-), (div), (*), (=)</td>
+<td>---</td>
+<td>Aritmetik operatörler</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="axes">Axes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>AXE/Eksen</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Açıklama(TR)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ancestor</td>
+<td>Selects all ancestors (parent, grandparent, etc.) of the current node</td>
+<td>Bir düğümün bütün ATAları</td>
+</tr>
+<tr>
+<td>ancestor-or-self</td>
+<td>Selects all ancestors (parent, grandparent, etc.) of the current node and the current node itself</td>
+<td>Bir düğümün ATAları ve kendisi</td>
+</tr>
+<tr>
+<td>attribute</td>
+<td>Selects all attributes of the current node</td>
+<td>Bir düğümün bütün ÖZNİTELİKleri</td>
+</tr>
+<tr>
+<td>child</td>
+<td>Selects all children of the current node</td>
+<td>Bir düğümün bütün ÇOCUKları</td>
+</tr>
+<tr>
+<td>descendant</td>
+<td>Selects all descendants (children, grandchildren, etc.) of the current node</td>
+<td>Bir düğümün bütün (alt)NESİLleri</td>
+</tr>
+<tr>
+<td>decendant-or-self</td>
+<td>Selects all descendants (children, grandchildren, etc.) of the current node and the current node itself</td>
+<td>Bir düğümün bütün (alt)NESİLleri ve kendisi</td>
+</tr>
+<tr>
+<td>following</td>
+<td>Selects everything in the document after the closing tag of the current node</td>
+<td>Dökümanda mevcut düğümden SONRAKİ her şey</td>
+</tr>
+<tr>
+<td>following-sibling</td>
+<td>Selects all siblings after the current node</td>
+<td>Mevcut düğümden sonraki bütün KARDEŞ düğümler</td>
+</tr>
+<tr>
+<td>namespace</td>
+<td>Selects all namespace nodes of the current node</td>
+<td>Mevcut düğümün bütün AD ALANI(namespace) düğümleri</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>Selects the parent of the current node</td>
+<td>Mevcut düğümün EBEVEYNi</td>
+</tr>
+<tr>
+<td>preceding</td>
+<td>Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes and namespace nodes</td>
+<td>Mevcut düğümden önceki (Mevcudun ATAsı, Özniteliği, Ad Alanı (namespace) hariç) bütün düğümler</td>
+</tr>
+<tr>
+<td>preceding-sibling</td>
+<td>Selects all siblings before the current node</td>
+<td>Mevcut düğümden önceki bütün akrdeş düğümler</td>
+</tr>
+<tr>
+<td>self</td>
+<td>Selects the current node</td>
+<td>Mevcut düğümün KENDİsi</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Açıklama(TR)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>child::book</td>
+<td>Selects all book nodes that are children of the current node</td>
+<td>"Book" elemanının bütün ÇOCUKları</td>
+</tr>
+<tr>
+<td>attribute::lang</td>
+<td>Selects the lang attribute of the current node</td>
+<td>"lang" ÖZNİTELİĞİ</td>
+</tr>
+<tr>
+<td>child::*</td>
+<td>Selects all element children of the current node</td>
+<td>bütün ÇOCUKları</td>
+</tr>
+<tr>
+<td>attribute::*</td>
+<td>Selects all attributes of the current node</td>
+<td>Bütün ÖZNİTELİKleri</td>
+</tr>
+<tr>
+<td>child::text()</td>
+<td>Selects all text node children of the current node</td>
+<td>Çocuk düğümlerdeki bütün metin (Text) düğümleri</td>
+</tr>
+<tr>
+<td>child::node()</td>
+<td>Selects all children of the current node</td>
+<td>Bütün ÇOCUK düğümler</td>
+</tr>
+<tr>
+<td>descendant::book</td>
+<td>Selects all book descendants of the current node</td>
+<td>"Book"un bütün (alt)NESİL düğümleri</td>
+</tr>
+<tr>
+<td>ancestor::book</td>
+<td>Selects all book ancestors of the current node</td>
+<td>"Book"un bütün ATA düğümleri</td>
+</tr>
+<tr>
+<td>ancestor-or-self::book</td>
+<td>Selects all book ancestors of the current node - and the current as well if it is a book node</td>
+<td>"Book"un bütün ATAları ve KENDİsi</td>
+</tr>
+<tr>
+<td>child::*/child::price</td>
+<td>Selects all price grandchildren of the current node</td>
+<td>Mevcut düğümün bütün çocuklarının çocuklarının (torunların) "price" düğümleri</td>
 </tr>
 </tbody>
 </table>
