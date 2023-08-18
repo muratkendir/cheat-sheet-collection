@@ -17,12 +17,14 @@ nodename | Selects all nodes with the name "nodename" | "nodename" ismine sahip 
 * | Matches any element node | Eşleşen herhangi bir düğüm | ---
 @* | Matches any element node | Eşeleşen herhangi bir öznitelik | ---
 node() | Matches any node of any kind | Herhangi bir türdeki herhangi bir düğüm | name(), local-name(), namepsace-uri(), position()
+--- | --- | --- | ---
 <br>
 **Example** | **Description** | **Açıklama(TR)**
 --- | --- | ---
 /bookstore/* | --- | "bookstore" içindeki herhangi bir düğüm
 //* | --- | Mevcuttan itibaren dökümandaki herhangi bir düğüm
 //title[@*] | --- | Özniteliği olan herhangi bir "title" türündeki düğüm
+--- | --- | ---
 <br>
 
 ## Predicates and Operators
@@ -35,12 +37,14 @@ book[last()] | Last node in book | "Book" içindeki son (çocuk) düğüm
 [position<3] | First two nodes | İlk iki düğüm
 //title[@lang] | Any "title" nodes with a "lang" attribute | Düğüm adı "title" olup, "lang" isimli bir özniteliği olan düğümler
 /bookstore/book[price>35.00] | Alt books in bookstore which are expensive than 35 unit | "Bookstore" içindeki "Book"larda fiyatı 35'den fazla olanlar
+--- | --- | ---
 <br>
 **OPERATOR** | **Description** | **Açıklama(TR)**
 --- | --- | ---
 //book/title ```||``` //book/price | Double pipe used as AND | "Book" içindeki "title"lar VE "book" içindeki "price"lar
 //book ```|``` //cd | --- | İki düğümü bir araya getirir.
 (+), (-), (div), (*), (=) | --- | Aritmetik operatörler
+--- | --- | ---
 <br>
 
 ## Axes
@@ -60,6 +64,7 @@ parent | Selects the parent of the current node | Mevcut düğümün EBEVEYNi
 preceding | Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes and namespace nodes | Mevcut düğümden önceki (Mevcudun ATAsı, Özniteliği, Ad Alanı (namespace) hariç) bütün düğümler
 preceding-sibling | Selects all siblings before the current node | Mevcut düğümden önceki bütün akrdeş düğümler
 self | Selects the current node | Mevcut düğümün KENDİsi
+--- | --- | ---
 <br>
 
 ## Examples
@@ -76,4 +81,4 @@ descendant::book | Selects all book descendants of the current node | "Book"un b
 ancestor::book | Selects all book ancestors of the current node | "Book"un bütün ATA düğümleri
 ancestor-or-self::book | Selects all book ancestors of the current node - and the current as well if it is a book node | "Book"un bütün ATAları ve KENDİsi
 child::*/child::price | Selects all price grandchildren of the current node | Mevcut düğümün bütün çocuklarının çocuklarının (torunların) "price" düğümleri
-
+--- | --- | ---
