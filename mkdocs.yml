@@ -1,6 +1,8 @@
 site_name: cheat-sheet-collection
 nav:
   - Home: index.md
+  - X-Files:
+      - XPath: x-files/xpath.md
   - YAML: yaml/yaml-main.md
   - ORACLEDB:
     - "SDO_GEOMETRY (ORACLEDB)": oracledb/sdo_geometry.md
