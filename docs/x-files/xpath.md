@@ -82,3 +82,7 @@ ancestor::book | Selects all book ancestors of the current node | "Book"un büt�
 ancestor-or-self::book | Selects all book ancestors of the current node - and the current as well if it is a book node | "Book"un bütün ATAları ve KENDİsi
 child::*/child::price | Selects all price grandchildren of the current node | Mevcut düğümün bütün çocuklarının çocuklarının (torunların) "price" düğümleri
 --- | --- | ---
+
+## Other Useful Sources
+
+[https://devhints.io/xpath](https://devhints.io/xpath)
