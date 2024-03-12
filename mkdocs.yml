@@ -1,6 +1,8 @@
 site_name: cheat-sheet-collection
 nav:
   - Home: index.md
+  - City-Files:
+      - CityGML: city-files/citygml_vs_gml.md
   - X-Files:
       - XPath: x-files/xpath.md
   - YAML: yaml/yaml-main.md

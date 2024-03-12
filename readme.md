@@ -6,8 +6,10 @@
 [The "Gypsy Girl" is in Zeugma Mosaic Museum](https://en.wikipedia.org/wiki/Zeugma_Mosaic_Museum)
 <br>
 ## Contents
+- City-Files:
+- - [CityGML](docs/city-files/citygml_vs_gml.md)
 - X-Files:
-- - [XPath](docs/xfiles/xpath.md)
+- - [XPath](docs/x-files/xpath.md)
 - [YAML](docs/yaml/yaml-main.md)
 - ORACLEDB:
 - - [SDO_GEOMETRY (ORACLEDB)](docs/oracledb/sdo_geometry.md)
