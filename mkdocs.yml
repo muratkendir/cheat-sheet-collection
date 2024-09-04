@@ -1,6 +1,7 @@
 site_name: cheat-sheet-collection
 nav:
   - Home: index.md
+  - Django: django/django-main.md
   - Geo-Web-Services: geo-web-services/geo-web-services.md
   - City-Files:
       - CityGML: city-files/citygml_vs_gml.md
