@@ -13,6 +13,7 @@ Custom-made Cheatsheets or links to some useful cheatsheet documents.
 <br>
 ## Contents
 - [Django](django/django-main.md)
+- [LXD](lxd/lxd.md)
 - [Geo Web Services](geo-web-services/geo-web-services.md)
 - City-Files:
     - [CityGML](city-files/citygml_vs_gml.md)
