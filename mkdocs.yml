@@ -9,6 +9,7 @@ nav:
   - X-Files:
       - XPath: x-files/xpath.md
   - YAML: yaml/yaml-main.md
+  - Ontology: ontology/ontology.md
   - ORACLEDB:
     - "SDO_GEOMETRY (ORACLEDB)": oracledb/sdo_geometry.md
     - "OracleDB vs PostgreSQL": oracledb/oracledb-vs-postgresql-tricks.md
