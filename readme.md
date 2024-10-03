@@ -9,7 +9,7 @@
 
 ## Contents
 
-- [Django](docs/djang0/django-main.md)
+- [Django](docs/django/django-main.md)
 - [LXD - LXC](docs/lxd/lxd.md)
 - [Geo Web Services](docs/geo-web-services/geo-web-services.md)
 - City-Files:
