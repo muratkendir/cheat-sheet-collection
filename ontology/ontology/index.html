@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../django/django-main/">
+        <link rel="prev" href="../../yaml/yaml-main/">
       
       
-        <link rel="next" href="../../geo-web-services/geo-web-services/">
+        <link rel="next" href="../../oracledb/sdo_geometry/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>LXD/LXC - cheat-sheet-collection</title>
+        <title>Ontology - cheat-sheet-collection</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lxd-and-lxc-notes" class="md-skip">
+        <a href="#ontology-rdfowl-notes" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LXD/LXC
+              Ontology
             
           </span>
         </div>
@@ -226,29 +226,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    LXD/LXC
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../lxd/lxd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -257,33 +237,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-forward-a-port-from-instance-to-the-host" class="md-nav__link">
-    How to forward a port from instance to the host:
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -452,9 +405,29 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../ontology/ontology/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ontology
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -463,6 +436,123 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-types" class="md-nav__link">
+    Relation Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disjoint-tr-ayrk-eleman" class="md-nav__link">
+    DISJOINT: {TR} Ayrık Eleman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sibling-tr-kardes-es-duzeyde-ekuri-eleman" class="md-nav__link">
+    SIBLING: {TR} Kardeş (eş düzeyde / eküri) eleman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-property-tr-iliski" class="md-nav__link">
+    OBJECT PROPERTY: {TR} İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-property-tr-tersinir-iliski-tersi-de-gecerli-olan" class="md-nav__link">
+    INVERSE PROPERTY: {TR} Tersinir İlişki (Tersi de geçerli olan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-property-single-valued-properties-tr-tek-nesne-ile-kurulabilen-iliski" class="md-nav__link">
+    FUNCTIONAL PROPERTY (Single Valued Properties): {TR} Tek nesne ile kurulabilen ilişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-functional-property" class="md-nav__link">
+    INVERSE FUNCTIONAL PROPERTY:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitive-property-tr-kaltmsal-iliski" class="md-nav__link">
+    TRANSITIVE PROPERTY : {TR} Kalıtımsal İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symmetric-property-tr-simetrik-iliski" class="md-nav__link">
+    SYMMETRIC PROPERTY: {TR} Simetrik İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asymmetric-property-tr-asimetrik-iliski" class="md-nav__link">
+    ASYMMETRIC PROPERTY: {TR} Asimetrik İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexive-property-tr-refleksif-yansyan-iliski" class="md-nav__link">
+    REFLEXIVE PROPERTY: {TR} Refleksif (Yansıyan) İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irreflexive-property-tr-refleksif-olmayan-yansmayan-iliski" class="md-nav__link">
+    IRREFLEXIVE PROPERTY: {TR} Refleksif olmayan (Yansımayan) ilişki
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -594,9 +684,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-forward-a-port-from-instance-to-the-host" class="md-nav__link">
-    How to forward a port from instance to the host:
+  <a href="#terminology" class="md-nav__link">
+    Terminology
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-types" class="md-nav__link">
+    Relation Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disjoint-tr-ayrk-eleman" class="md-nav__link">
+    DISJOINT: {TR} Ayrık Eleman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sibling-tr-kardes-es-duzeyde-ekuri-eleman" class="md-nav__link">
+    SIBLING: {TR} Kardeş (eş düzeyde / eküri) eleman
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-property-tr-iliski" class="md-nav__link">
+    OBJECT PROPERTY: {TR} İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-property-tr-tersinir-iliski-tersi-de-gecerli-olan" class="md-nav__link">
+    INVERSE PROPERTY: {TR} Tersinir İlişki (Tersi de geçerli olan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-property-single-valued-properties-tr-tek-nesne-ile-kurulabilen-iliski" class="md-nav__link">
+    FUNCTIONAL PROPERTY (Single Valued Properties): {TR} Tek nesne ile kurulabilen ilişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-functional-property" class="md-nav__link">
+    INVERSE FUNCTIONAL PROPERTY:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitive-property-tr-kaltmsal-iliski" class="md-nav__link">
+    TRANSITIVE PROPERTY : {TR} Kalıtımsal İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symmetric-property-tr-simetrik-iliski" class="md-nav__link">
+    SYMMETRIC PROPERTY: {TR} Simetrik İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asymmetric-property-tr-asimetrik-iliski" class="md-nav__link">
+    ASYMMETRIC PROPERTY: {TR} Asimetrik İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexive-property-tr-refleksif-yansyan-iliski" class="md-nav__link">
+    REFLEXIVE PROPERTY: {TR} Refleksif (Yansıyan) İlişki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irreflexive-property-tr-refleksif-olmayan-yansmayan-iliski" class="md-nav__link">
+    IRREFLEXIVE PROPERTY: {TR} Refleksif olmayan (Yansımayan) ilişki
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -615,12 +795,114 @@
                   
 
 
-<h1 id="lxd-and-lxc-notes">LXD and LXC Notes</h1>
-<h2 id="how-to-forward-a-port-from-instance-to-the-host">How to forward a port from instance to the host:</h2>
-<p>In the example below, "pgpp" is containers name. "postgres-forward" is the name of the rule (device)</p>
-<pre><code class="language-bash">lxc config device add pgpp postgres-forward proxy listen=tcp:0.0.0.0:5432 connect=tcp:127.0.0.1:5432
-</code></pre>
-<p>If you want to add port forwarding within a profile, check <a href="https://lxdware.com/forwarding-host-ports-to-lxd-instances/">this website</a></p>
+<h1 id="ontology-rdfowl-notes">Ontology RDF/OWL Notes</h1>
+<h2 id="terminology">Terminology</h2>
+<p><strong>Asserted Hierarchy</strong> : {TR} Bildirilen Hiyerarşi</p>
+<p><strong>Inferred Hierarchy</strong> : {TR} Çıkarsanmış Hiyerarşi
+(Hierarchies created by "Reasoners")</p>
+<p><strong>Necessary Condition</strong> (Primitive Class)</p>
+<p>SubClassOf : Cheesy Pizza hasTopping CheeseTopping.</p>
+<p>{TR} "Peynirli Pizza" sınıfındaki tüm pizzalarda peynir malzemesi olması gerekir. Bu ortaya konabiliyorsa, önceki önerme "Gereklilik Koşulu"dur. (Necessary Condition)  </p>
+<p><strong>Necessary &amp; Sufficient Condition</strong> (Defined Class)</p>
+<p>SubClassOf (Anonymous Ancestor) : Cheesy Pizza has Topping CheeseTopping.</p>
+<p>{TR} 
+- "Peynirli Pizza" sınıfındaki tüm pizzalarda peynir malzemesi olması gerekir.
+- "PeynirMalzemesi" gereklilik koşulunu sağlayan tüm pizzalar, peynrili pizzadır.</p>
+<p>Bu iki önerme ortaya konabiliyorsa, önceki önerme, gerekli ve yeterli olma koşulu'dur. (Necessary &amp; Sufficient Condition)</p>
+<p><strong>Universal Restriction</strong> / ∀ / "All Values From" / "only"</p>
+<p><em>All</em> VegeterianPizza hasTopping <em>only</em> (CheeseTopping <em>or</em> VegetableTopping).</p>
+<p>{TR} <em>Bütün</em> VejeteryanPizza(larda), vardır, sadece (PeynirMalzemesi veya SebzeMalzemesi).</p>
+<ul>
+<li>Gerekli ve yeterli koşul olduğu için "Tanımlanmış Sınıf"a (Defined Class) dönüştürülebilir.</li>
+</ul>
+<p><strong>OWA/Open World Assumption</strong> : Bir sınıfın tanımının yapılmamış olması, o sınıfın var olmadığı anlamına gelmez.</p>
+<p><strong>Closure Axiom</strong> : {TR} Kapatan Önerme</p>
+<p>{TR} 
+1) İçinde <em>sadece</em> (peynir veya sebze malzemesi) olan <em>tüm</em> pizzalar, vejeteryan pizzadır. 
+2) Margerita Pizza, şu içeriğe sahiptir; <em>bazı</em> peynir malzemesi</p>
+<p>1+2) Önermelerini dikkate alınarak çalışacak olan "Reasoner"lar, Margerita Pizza'yı vejeteryan pizza olarak tanımlamayacaklar. Nedeni, Margerita Pizza'da <em>bazı</em> peynir malzemesi olduğunu biliyoruz, ancak et ürünü olup olmadığını bilmiyoruz. </p>
+<p>Alternatif 2) Margerita Pizza, şu içeriğe sahiptir; <em>sadece</em> peynir malzemesi.</p>
+<p>1+Alternatif 2) Bu durumda, Margerita Pizza, VejeteryanPizza olarak Reasoner'lar tarafından tanımlanabilir.</p>
+<p><strong>Range (Intersection)</strong> : {TR} Hedef Alan</p>
+<p>Pizza hasBase <em>PizzaBase</em>.</p>
+<p>{TR} Hedef Alan, pizza tabanıdır. (Pizza Base)</p>
+<p>Eğer bu alanda birden fazla sınıf varsa, bu sınıfların kesişimine hedef alan denir.</p>
+<p>VegetarianPizza hasTopping only (CheeseTopping or VegetableTopping).</p>
+<p><strong>Domain</strong> : Öznel Alan</p>
+<p><em>Pizza</em> hasBase PizzaBase.</p>
+<p>Note: Domain and Range do not act as constraint.
+{TR} Not: Öznel Alan ve Hedef Alan , kısıtlama olarak davranmaz. </p>
+<p><strong>Property Restriction</strong> : {TR} Özellik/İlişki Kısıtlamaları</p>
+<p>1) Quantifier : {TR} Nicelik
+    1-a) Existential (∃) / "SomeValuesFrom"  : {TR} Kısmi
+    1-b) Universal (∀) / "AllValuesFrom" : {TR} Bütünsel
+2) Cardinality : {TR} Önemlilik
+3) hasValue : {TR} Öznitelik</p>
+<p>MargeritaPizza hasTopping <strong>some (∃)</strong> TomatoTopping.
+MargeritaPizza hasTopping <strong>some (∃)</strong> MozarellaTopping.</p>
+<p>{TR} En az 1 Mozarella ve en az 1 domates malzemesi olan pizza Margerita Pizzadır. Buradaki kısıtlama (1a) kısmi-nicelikseldir. (quantifier-existential)</p>
+<h2 id="relation-types">Relation Types</h2>
+<h3 id="disjoint-tr-ayrk-eleman">DISJOINT: {TR} Ayrık Eleman</h3>
+<p>Pizza  is <strong>disjoint</strong> with PizzaTopping and PizzaBase.
+{TR}
+Pizza tabanı, pizza olamaz.
+Pizza malzemesi, pizza olamaz.</p>
+<h3 id="sibling-tr-kardes-es-duzeyde-ekuri-eleman">SIBLING: {TR} Kardeş (eş düzeyde / eküri) eleman</h3>
+<p>SeepPanBase and ThinCrispyBase are <strong>sibling</strong>s.
+{TR}
+Kalın hamur ve ince hamur eş düzeyde elemanlardır.
+Kalın hamur ve ince hamur, pizza tabanının alt-sınıfıdır. (SubClassOf)</p>
+<h3 id="object-property-tr-iliski">OBJECT PROPERTY: {TR} İlişki</h3>
+<p>Pizza <strong>hasIngredient</strong> Base.
+{TR}
+Pizza şu içeriğe sahiptir: Pizza Tabanı.</p>
+<h3 id="inverse-property-tr-tersinir-iliski-tersi-de-gecerli-olan">INVERSE PROPERTY: {TR} Tersinir İlişki (Tersi de geçerli olan)</h3>
+<p>Base isIngredientOf Pizza.
+Pizza hasIngredient Base.</p>
+<h3 id="functional-property-single-valued-properties-tr-tek-nesne-ile-kurulabilen-iliski">FUNCTIONAL PROPERTY (Single Valued Properties): {TR} Tek nesne ile kurulabilen ilişki</h3>
+<p>{TR}
+Osman şuAnneyeSahiptir: Ayşe.
+Osman şuAnneyeSahiptir: Fatma.
+"şuAnnayeSahiptir" ilişkisi fonksiyonel ise Ayşe ve Fatma aynı kişidir.</p>
+<h3 TR="TR" id="inverse-functional-property">INVERSE FUNCTIONAL PROPERTY:</h3>
+<p>Ayşe, şuKişininAnnesidir: Osman.
+Fatma, şuKişininAnnesidir: Osman.
+"şuKişininAnnesidir" ilişkisi, "şuAnnyeSahiptir" ilişkisinin ters fonksiyonu ise, yine Ayşe ve Fatma'nın aynı kişi olduğu söylenir.</p>
+<h3 id="transitive-property-tr-kaltmsal-iliski">TRANSITIVE PROPERTY : {TR} Kalıtımsal İlişki</h3>
+<p>Mathew <strong>hasAncestor</strong> <em>Peter</em>.
+<em>Peter</em> <strong>hasAncestor</strong> William.</p>
+<p>If "hasAncestor" transitive property, then it can be said that "Mathew hasAncestor William."</p>
+<blockquote>
+If property is transitive, then inverse property should alsobe transitive.
+For exp: 
+1) Peter isDescendantOf Mathew.
+2) William isDescendantOf Peter.
+1+2) William isDescendantOf Mathew.
+{TR} Eğer ilişki kalıtımsal ise, ters ilişki de kalıtımsaldır.
+</blockquote>
+
+<blockquote>
+If property is transitive, then it can not be functional.
+{TR} Eğer ilişki kalıtımsal ise, fonksiyonel olamaz.
+</blockquote>
+
+<h3 id="symmetric-property-tr-simetrik-iliski">SYMMETRIC PROPERTY: {TR} Simetrik İlişki</h3>
+<p>Mathew <strong>hasSibling</strong> Gemma.
+If "hasSibling" symmetric property, then it can be said that "Gemma hasSibling Mathew."</p>
+<h3 id="asymmetric-property-tr-asimetrik-iliski">ASYMMETRIC PROPERTY: {TR} Asimetrik İlişki</h3>
+<p>{TR}
+Robert şuKişininÇocuğudur: David.
+"şuKişininÇocuğudur" asimetrik ilişki ise, "David şuKişininÇocuğudur: Robert." yanlış önerme olur.</p>
+<h3 id="reflexive-property-tr-refleksif-yansyan-iliski">REFLEXIVE PROPERTY: {TR} Refleksif (Yansıyan) İlişki</h3>
+<p>George knows Simone.
+If "knows" property is reflexive, then it can be said that:
+- George knows George.
+- Simone knows Simone.</p>
+<h3 id="irreflexive-property-tr-refleksif-olmayan-yansmayan-iliski">IRREFLEXIVE PROPERTY: {TR} Refleksif olmayan (Yansımayan) ilişki</h3>
+<p>Alice isMotherOf Bob.
+If "isMotherOf" property is irreflexive, then it can be said that:
+- Alice isNOTMotherOf Alice.
+- Bob isNOTMotherOf Bob.</p>
 
 
 
