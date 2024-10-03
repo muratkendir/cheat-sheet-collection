@@ -2,18 +2,18 @@
 
 ## Terminology
 
-**Asserted Hierarchy** : {TR} Bildirilen Hiyerarşi
+### Asserted Hierarchy : {TR} Bildirilen Hiyerarşi
 
-**Inferred Hierarchy** : {TR} Çıkarsanmış Hiyerarşi
+### Inferred Hierarchy : {TR} Çıkarsanmış Hiyerarşi
 (Hierarchies created by "Reasoners")
 
-**Necessary Condition** (Primitive Class)
+### Necessary Condition (Primitive Class)
 
 SubClassOf : Cheesy Pizza hasTopping CheeseTopping.
 
 {TR} "Peynirli Pizza" sınıfındaki tüm pizzalarda peynir malzemesi olması gerekir. Bu ortaya konabiliyorsa, önceki önerme "Gereklilik Koşulu"dur. (Necessary Condition)  
 
-**Necessary & Sufficient Condition** (Defined Class)
+### Necessary & Sufficient Condition (Defined Class)
 
 SubClassOf (Anonymous Ancestor) : Cheesy Pizza has Topping CheeseTopping.
 
@@ -23,7 +23,7 @@ SubClassOf (Anonymous Ancestor) : Cheesy Pizza has Topping CheeseTopping.
 
 Bu iki önerme ortaya konabiliyorsa, önceki önerme, gerekli ve yeterli olma koşulu'dur. (Necessary & Sufficient Condition)
 
-**Universal Restriction** / ∀ / "All Values From" / "only"
+### Universal Restriction / ∀ / "All Values From" / "only"
 
 *All* VegeterianPizza hasTopping *only* (CheeseTopping *or* VegetableTopping).
 
@@ -31,9 +31,9 @@ Bu iki önerme ortaya konabiliyorsa, önceki önerme, gerekli ve yeterli olma ko
 
 - Gerekli ve yeterli koşul olduğu için "Tanımlanmış Sınıf"a (Defined Class) dönüştürülebilir.
 
-**OWA/Open World Assumption** : Bir sınıfın tanımının yapılmamış olması, o sınıfın var olmadığı anlamına gelmez.
+### OWA/Open World Assumption : Bir sınıfın tanımının yapılmamış olması, o sınıfın var olmadığı anlamına gelmez.
 
-**Closure Axiom** : {TR} Kapatan Önerme
+### Closure Axiom : {TR} Kapatan Önerme
 
 {TR} 
 1) İçinde *sadece* (peynir veya sebze malzemesi) olan *tüm* pizzalar, vejeteryan pizzadır. 
@@ -45,7 +45,7 @@ Alternatif 2) Margerita Pizza, şu içeriğe sahiptir; *sadece* peynir malzemesi
 
 1+Alternatif 2) Bu durumda, Margerita Pizza, VejeteryanPizza olarak Reasoner'lar tarafından tanımlanabilir.
 
-**Range (Intersection)** : {TR} Hedef Alan
+### Range (Intersection) : {TR} Hedef Alan
 
 Pizza hasBase *PizzaBase*.
 
@@ -55,14 +55,14 @@ Eğer bu alanda birden fazla sınıf varsa, bu sınıfların kesişimine hedef a
 
 VegetarianPizza hasTopping only (CheeseTopping or VegetableTopping).
 
-**Domain** : Öznel Alan
+### Domain : Öznel Alan
 
 *Pizza* hasBase PizzaBase.
 
 Note: Domain and Range do not act as constraint.
 {TR} Not: Öznel Alan ve Hedef Alan , kısıtlama olarak davranmaz. 
 
-**Property Restriction** : {TR} Özellik/İlişki Kısıtlamaları
+### Property Restriction : {TR} Özellik/İlişki Kısıtlamaları
 
 1) Quantifier : {TR} Nicelik
     1-a) Existential (∃) / "SomeValuesFrom"  : {TR} Kısmi
@@ -155,12 +155,3 @@ Alice isMotherOf Bob.
 If "isMotherOf" property is irreflexive, then it can be said that:
 - Alice isNOTMotherOf Alice.
 - Bob isNOTMotherOf Bob.
-
-
-
-
-
-
-
-
- 
